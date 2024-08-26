@@ -187,14 +187,27 @@
                             </div>
                         </div> 
 
-                        <div class="row align-items-center mb-4">
-                            <div class="col-lg-auto">
-                                <span><i class="ri-calendar-event-fill align-bottom me-1"></i> Pilih Tahun</span>
+                        <div class="row mx-auto justify-content-between align-items-center mb-4">
+                            <div class="col-md-9">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-auto">
+                                        <span><i class="ri-calendar-event-fill align-bottom me-1"></i> Pilih Tahun</span>
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <select class="form-control" data-choices data-choices-search-false name="choices-select-status" id="choices-select-status">
+                                            <option value="">2024</option>
+                                            <option value="2023">2023</option>
+                                            <option value="2022">2022</option>
+                                            <option value="2021">2021</option>
+                                            <option value="2020">2020</option>
+                                        </select>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-lg-2">
+                            <div class="col-lg-3 m-0">
                                 <select class="form-control" data-choices data-choices-search-false name="choices-select-status" id="choices-select-status">
-                                    <option value="">2024</option>
-                                    <option value="2023">2023</option>
+                                    <option value=""><i class="ri-user-settings-line text-muted align-bottom me-1"></i>Potensi Wilayah</option>
+                                    <option value="2023">Sarana & Prasarana</option>
                                     <option value="2022">2022</option>
                                     <option value="2021">2021</option>
                                     <option value="2020">2020</option>
@@ -206,7 +219,7 @@
                         <div class="col-lg-12">
                             <div class="card">
                                 <div>
-                                    <ul class="nav nav-tabs nav-tabs-custom" role="tablist">
+                                    <ul class="nav nav-extends nav-tabs nav-tabs-custom" role="tablist">
                                         <li class="nav-item">
                                             <a class="nav-link active" data-bs-toggle="tab" href="#penduduk" role="tab" aria-selected="false">
                                                 <i class="ri-user-settings-line text-muted align-bottom me-1"></i> Potensi Penduduk
@@ -219,7 +232,42 @@
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" data-bs-toggle="tab" href="#sarpra" role="tab" aria-selected="false">
-                                                <i class="ri-list-unordered text-muted align-bottom me-1"></i> Sarana & Prasarana
+                                                <i class="ri-list-unordered text-muted align-bottom me-1"></i> Perumahan dan Lingkungan
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-bs-toggle="tab" href="#dikkes" role="tab" aria-selected="false">
+                                                <i class="ri-list-unordered text-muted align-bottom me-1"></i> Pendidikan dan Kesehatan
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-bs-toggle="tab" href="#olahraga" role="tab" aria-selected="false">
+                                                <i class="ri-list-unordered text-muted align-bottom me-1"></i> Olahraga & Hiburan
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-bs-toggle="tab" href="#agkom" role="tab" aria-selected="false">
+                                                <i class="ri-list-unordered text-muted align-bottom me-1"></i> Angkutan & Komunikasi
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-bs-toggle="tab" href="#ekonomi" role="tab" aria-selected="false">
+                                                <i class="ri-list-unordered text-muted align-bottom me-1"></i> Ekonomi
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-bs-toggle="tab" href="#sosial" role="tab" aria-selected="false">
+                                                <i class="ri-list-unordered text-muted align-bottom me-1"></i> Sosial & Keamanan
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-bs-toggle="tab" href="#balam" role="tab" aria-selected="false">
+                                                <i class="ri-list-unordered text-muted align-bottom me-1"></i> Bencana Alam & Mitigasi
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-bs-toggle="tab" href="#asdes" role="tab" aria-selected="false">
+                                                <i class="ri-list-unordered text-muted align-bottom me-1"></i> Aset Desa
                                             </a>
                                         </li>
                                     </ul>
@@ -351,12 +399,7 @@
                                         <!-- TAB WILAYAH -->
                                         <div class="tab-pane" id="wilayah" role="tabpanel">
                                             <div class="row pb-3">
-                                                <div class="col-md-6">
-                                                    <figure class="highcharts-figure">
-                                                        <div id="pie_chart_podes01" class="highcharts-light" height="100%"></div>
-                                                    </figure>
-                                                </div>
-                                                <div class="col-md-6">
+                                                <div class="col-md-12">
                                                     <div class="card card-height-100">
                                                         <div class="card-header bg-primary align-items-center d-flex">
                                                             <h4 class="card-title mb-0 flex-grow-1 text-white">Keterangan Tempat</h4>
@@ -596,7 +639,7 @@
                                         </div>
                                         <!--end tab-pane-->
 
-                                        <!-- TAB SARANA PRASARANA -->
+                                        <!-- TAB PERUMAHAN DAN LINGKUNGAN -->
                                         <div class="tab-pane" id="sarpra" role="tabpanel">
                                             <div class="row">
                                                 <div class="col-md-6">
@@ -751,8 +794,28 @@
                                                                     <table class="table table-hover table-striped align-middle mb-0">
                                                                         <tbody>
                                                                             <tr>
+                                                                                <td class="text-uppercase">Sumber air untuk minum sebagian besar keluarga di desa/kelurahan berasal dari </td>
+                                                                                <td class="text-end">PAM</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="text-uppercase">Sumber air untuk mandi/cuci sebagian besar keluarga berasal dari</td>
+                                                                                <td class="text-end">PAM/PDAM</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="text-uppercase">Keberadaan sungai di desa/kelurahan</td>
+                                                                                <td class="text-end">Ada</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="text-uppercase">Jumlah Kolam Penampungan Air di desa/kelurahan</td>
+                                                                                <td class="text-end">2</td>
+                                                                            </tr>
+                                                                            <tr>
                                                                                 <td class="text-uppercase">Penggunaan fasilitas buang air besar sebagian besar keluarga di desa/kelurahan: </td>
-                                                                                <td class="text-end">3</td>
+                                                                                <td class="text-end">Jamban Sendiri</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="text-uppercase">Tempat pembuangan akhir tinja sebagian besar keluarga</td>
+                                                                                <td class="text-end">Tangki</td>
                                                                             </tr>
                                                                         </tbody>
                                                                     </table>
@@ -764,7 +827,7 @@
                                                 <div class="col-md-6">
                                                     <div class="card card-height-100">
                                                         <div class="card-header bg-primary align-items-center d-flex">
-                                                            <h4 class="card-title mb-0 flex-grow-1 text-white">Sarana dan Prasarana Kesehatan</h4>
+                                                            <h4 class="card-title mb-0 flex-grow-1 text-white">Pemukiman Kumuh</h4>
                                                         </div><!-- end card header -->
                         
                                                         <div class="card-body px-3">
@@ -773,7 +836,19 @@
                                                                     <table class="table table-hover table-striped align-middle mb-0">
                                                                         <tbody>
                                                                             <tr>
-                                                                                <td class="text-uppercase">Puskesmas </td>
+                                                                                <td class="text-uppercase">Keberadaan permukiman kumuh (sanitasi lingkungan buruk, bangunan padat, dan sebagian besar tidak layak huni) </td>
+                                                                                <td class="text-end">Ada</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="text-uppercase">Jumlah Lokasi</td>
+                                                                                <td class="text-end">1</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="text-uppercase">Jumlah Bangunan</td>
+                                                                                <td class="text-end">1</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="text-uppercase">Jumlah Keluarga</td>
                                                                                 <td class="text-end">1</td>
                                                                             </tr>
                                                                         </tbody>
@@ -787,6 +862,586 @@
                                             <!--end row-->
                                         </div>
                                         <!--end tab-pane-->
+
+                                        <!-- TAB PENDIDIKAN DAN KESEHATAN -->
+                                        <div class="tab-pane" id="dikkes" role="tabpanel">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <figure class="highcharts-figure">
+                                                        <div id="pie_chart_podes02" class="highcharts-light" height="100%"></div>
+                                                    </figure>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <figure class="highcharts-figure">
+                                                        <div id="bar_chart_podes02" class="highcharts-light" height="100%"></div>
+                                                    </figure>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="card card-height-100 mb-4">
+                                                        <div class="card-header bg-primary align-items-center d-flex">
+                                                            <h4 class="card-title mb-0 flex-grow-1 text-white">Sarana & Prasarana Pendidikan</h4>
+                                                        </div><!-- end card header -->
+                                                        <div class="card-body">
+                                                            <div data-simplebar style="max-height: 319px;">
+                                                                <div class="table-responsive mt-4 mt-xl-0">
+                                                                    <table class="table table-hover table-striped align-middle mb-0">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th>No.</th>
+                                                                                <th>Jenjang Pendidikan</th>
+                                                                                <th>Jumlah Negeri</th>
+                                                                                <th>Jumlah Swasta</th>
+                                                                                <th>Jarak</th>
+                                                                                <th>Kemudahan Untuk Mencapai</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>1</td>
+                                                                                <td>Pos PAUD</td>
+                                                                                <td>4</td>
+                                                                                <td>0</td>
+                                                                                <td>1</td>
+                                                                                <td>Sangat Mudah</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="card card-height-100 mb-4">
+                                                        <div class="card-header bg-primary align-items-center d-flex">
+                                                            <h4 class="card-title mb-0 flex-grow-1 text-white">Sarana & Prasarana Kesehatan</h4>
+                                                        </div><!-- end card header -->
+                                                        <div class="card-body">
+                                                            <div data-simplebar style="max-height: 319px;">
+                                                                <div class="table-responsive mt-4 mt-xl-0">
+                                                                    <table class="table table-hover table-striped align-middle mb-0">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th>No.</th>
+                                                                                <th>Sarana Kesehatan</th>
+                                                                                <th>Jumlah</th>
+                                                                                <th>Jarak</th>
+                                                                                <th>Kemudahan Untuk Mencapai</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>1</td>
+                                                                                <td>Rumah Sakit</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>Sulit</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="card card-height-100 mb-4">
+                                                        <div class="card-header bg-primary align-items-center d-flex">
+                                                            <h4 class="card-title mb-0 flex-grow-1 text-white">Penderita KLB</h4>
+                                                        </div><!-- end card header -->
+                                                        <div class="card-body">
+                                                            <div data-simplebar style="max-height: 319px;">
+                                                                <div class="table-responsive mt-4 mt-xl-0">
+                                                                    <table class="table table-hover table-striped align-middle mb-0">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th>No.</th>
+                                                                                <th>Jenis KLB/ Wabah Penyakit</th>
+                                                                                <th>Kejadian</th>
+                                                                                <th>Jumlah Penderita</th>
+                                                                                <th>Jumlah Penderita yang Meninggal</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>1</td>
+                                                                                <td>Muntaber/diare</td>
+                                                                                <td>Tidak Ada</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end Tab -->
+                                        <!-- TAB OLAHRAGA DAN HIBURAN -->
+                                        <div class="tab-pane" id="olahraga" role="tabpanel">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="card card-height-100 mb-4">
+                                                        <div class="card-header bg-primary align-items-center d-flex">
+                                                            <h4 class="card-title mb-0 flex-grow-1 text-white">Ketersediaan fasilitas/lapangan dan kelompok kegiatan olahraga di desa/kelurahan</h4>
+                                                        </div><!-- end card header -->
+                                                        <div class="card-body">
+                                                            <div data-simplebar style="max-height: 319px;">
+                                                                <div class="table-responsive mt-4 mt-xl-0">
+                                                                    <table class="table table-hover table-striped align-middle mb-0">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th>No.</th>
+                                                                                <th>Jenis Olahraga</th>
+                                                                                <th>Fasilitas/Lapangan Olahraga</th>
+                                                                                <th>Kelompok Kegiatan</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>1</td>
+                                                                                <td>Sepak Bola</td>
+                                                                                <td>Ada, Baik</td>
+                                                                                <td>Ada</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- TAB ANGKUTAN DAN KOMUNIKASI -->
+                                        <div class="tab-pane" id="agkom" role="tabpanel">
+                                            <div class="row">
+                                                <div class="col-md-8">
+                                                    <div class="card card-height-100 mb-4">
+                                                        <div class="card-header bg-primary align-items-center d-flex">
+                                                            <h4 class="card-title mb-0 flex-grow-1 text-white">Sarana transportasi dari kantor kepala desa/lurah ke kantor camat/bupati/walikota:</h4>
+                                                        </div><!-- end card header -->
+                                                        <div class="card-body">
+                                                            <div data-simplebar style="max-height: 319px;">
+                                                                <div class="table-responsive mt-4 mt-xl-0">
+                                                                    <table class="table table-hover table-striped align-middle mb-0">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th>No.</th>
+                                                                                <th>Kantor</th>
+                                                                                <th>Sarana Transportasi yang Biasa Digunakan</th>
+                                                                                <th>Jenis Angkutan Umum</th>
+                                                                                <th>Angkutan Umum yang Utama</th>
+                                                                                <th>Jarak Tempuh</th>
+                                                                                <th>Waktu Tempuh</th>
+                                                                                <th>Biaya Transportasi</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>1</td>
+                                                                                <td>Kantor Camat</td>
+                                                                                <td>Kendaraan Pribadi</td>
+                                                                                <td>Kendaraan</td>
+                                                                                <td>Kendaraan</td>
+                                                                                <td>1</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="card">
+                                                        <div class="card-header bg-primary align-items-center d-flex">
+                                                            <h4 class="card-title mb-0 flex-grow-1 text-white">Transportasi</h4>
+                                                        </div><!-- end card header -->
+                        
+                                                        <div class="card-body px-3">
+                                                            <div>
+                                                                <div class="table-responsive mt-4 mt-xl-0">
+                                                                    <table class="table table-hover table-striped align-middle mb-0">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>Lalu Lintas dari/ke desa/kelurahan melalui</td>
+                                                                                <td class="text-end">Darat</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Jenis permukaan jalan darat antar desa/kelurahan yang terluas</td>
+                                                                                <td class="text-end">Aspal</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Jalan darat antar desa/kelurahan dapat dilalui kendaraan bermotor roda 4 atau lebih</td>
+                                                                                <td class="text-end">Sepanjang Tahun</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Keberadaan angkutan umum
+                                                                                </td>
+                                                                                <td class="text-end">Ada</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Operasional angkutan umum yang utama
+                                                                                </td>
+                                                                                <td class="text-end">Setiap Hari</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div><!-- end card body -->
+                                                    </div><!-- end card -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- TAB EKONOMI -->
+                                        <div class="tab-pane" id="ekonomi" role="tabpanel">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="card mb-4">
+                                                        <div class="card-header bg-primary align-items-center d-flex">
+                                                            <h4 class="card-title mb-0 flex-grow-1 text-white">Jumlah sarana lembaga keuangan yang beroperasi di desa/kelurahan
+                                                            </h4>
+                                                        </div><!-- end card header -->
+                                                        <div class="card-body">
+                                                            <div>
+                                                                <div class="table-responsive mt-4 mt-xl-0">
+                                                                    <table class="table table-hover table-striped align-middle mb-0">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th>No.</th>
+                                                                                <th>Sarana Lembaga Keuangan	</th>
+                                                                                <th>Jumlah</th>
+                                                                                <th>Jarak</th>
+                                                                                <th>Kemudahan untuk mencapai</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>1</td>
+                                                                                <td>Bank Umum Pemerintah (BRI, BNI, Mandiri, BPD, BTN)	</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>Sulit</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="card mb-4">
+                                                        <div class="card-header bg-primary align-items-center d-flex">
+                                                            <h4 class="card-title mb-0 flex-grow-1 text-white">Jumlah sarana dan prasarana ekonomi di desa/kelurahan</h4>
+                                                        </div><!-- end card header -->
+                                                        <div class="card-body">
+                                                            <div>
+                                                                <div class="table-responsive mt-4 mt-xl-0">
+                                                                    <table class="table table-hover table-striped align-middle mb-0">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th>No.</th>
+                                                                                <th>Sarana Lembaga Keuangan	</th>
+                                                                                <th>Jumlah</th>
+                                                                                <th>Jarak</th>
+                                                                                <th>Kemudahan untuk mencapai</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>1</td>
+                                                                                <td>Toko/warung kelontong (tempat usaha di bangunan tetap untuk menjual berbagai jenis barang keperluan sehari– hari secara eceran, tanpa ada sistem pelayanan mandiri)</td>
+                                                                                <td>10</td>
+                                                                                <td>1</td>
+                                                                                <td>Sangat Mudah</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="card mb-4">
+                                                        <div class="card-header bg-primary align-items-center d-flex">
+                                                            <h4 class="card-title mb-0 flex-grow-1 text-white">Koperasi</h4>
+                                                        </div><!-- end card header -->
+                                                        <div class="card-body">
+                                                            <div>
+                                                                <div class="table-responsive mt-4 mt-xl-0">
+                                                                    <table class="table table-hover table-striped align-middle mb-0">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th>No.</th>
+                                                                                <th>Koperasi</th>
+                                                                                <th>Jumlah</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>1</td>
+                                                                                <td>Koperasi Unit Desa (KUD) yang beroperasi</td>
+                                                                                <td>0</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="card mb-4">
+                                                        <div class="card-header bg-primary align-items-center d-flex">
+                                                            <h4 class="card-title mb-0 flex-grow-1 text-white">Industri mikro dan kecil (memiliki tenaga kerja kurang dari 20 pekerja) menurut bahan baku utama
+                                                            </h4>
+                                                        </div><!-- end card header -->
+                                                        <div class="card-body">
+                                                            <div>
+                                                                <div class="table-responsive mt-4 mt-xl-0">
+                                                                    <table class="table table-hover table-striped align-middle mb-0">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th>No.</th>
+                                                                                <th>Nama Industri</th>
+                                                                                <th>Jumlah</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>1</td>
+                                                                                <td>Industri barang dari kulit (tas, sepatu, sandal, dll.)</td>
+                                                                                <td>0</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- TAB SOSIAL DAN KEAMANAN -->
+                                        <div class="tab-pane" id="sosial" role="tabpanel">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <figure class="highcharts-figure">
+                                                        <div id="pie_chart_podes01" class="highcharts-light" height="100%"></div>
+                                                    </figure>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="card mb-4">
+                                                        <div class="card-header bg-primary align-items-center d-flex">
+                                                            <h4 class="card-title mb-0 flex-grow-1 text-white">Jumlah tempat ibadah di desa/kelurahan
+                                                            </h4>
+                                                        </div><!-- end card header -->
+                                                        <div class="card-body">
+                                                            <div>
+                                                                <div class="table-responsive mt-4 mt-xl-0">
+                                                                    <table class="table table-hover table-striped align-middle mb-0">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>Masjid</td>
+                                                                                <td>1</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Surau/Langgar/Mushala</td>
+                                                                                <td>4</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Gereja Protestan</td>
+                                                                                <td>0</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Gereja Katolik</td>
+                                                                                <td>0</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="card mb-4">
+                                                        <div class="card-header bg-primary align-items-center d-flex">
+                                                            <h4 class="card-title mb-0 flex-grow-1 text-white">Tindak kejahatan yang terjadi di desa/kelurahan selama setahun terakhir :</h4>
+                                                        </div><!-- end card header -->
+                                                        <div class="card-body">
+                                                            <div>
+                                                                <div class="table-responsive mt-4 mt-xl-0">
+                                                                    <table class="table table-hover table-striped align-middle mb-0">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th>No.</th>
+                                                                                <th>Jenis Tindak Kejahatan	</th>
+                                                                                <th>Kejadian</th>
+                                                                                <th>Kecenderungan tindak kejahatan dibanding setahun yang lalu</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>1</td>
+                                                                                <td>Perkosaan/kejahatan terhadap kesusilaan</td>
+                                                                                <td>Tidak Ada</td>
+                                                                                <td>Sama Saja</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="card mb-4">
+                                                        <div class="card-header bg-primary align-items-center d-flex">
+                                                            <h4 class="card-title mb-0 flex-grow-1 text-white">Kegiatan warga desa/kelurahan untuk menjaga keamanan lingkungan di desa/kelurahan selama setahun terakhir :</h4>
+                                                        </div><!-- end card header -->
+                                                        <div class="card-body">
+                                                            <div>
+                                                                <div class="table-responsive mt-4 mt-xl-0">
+                                                                    <table class="table table-hover table-striped align-middle mb-0">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>Pembangunan/pemeliharaan pos keamanan lingkungan</td>
+                                                                                <td>Ya</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- TAB BENCANA ALAM DAN MITIGASI -->
+                                        <div class="tab-pane" id="balam" role="tabpanel">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="card mb-4">
+                                                        <div class="card-header bg-primary align-items-center d-flex">
+                                                            <h4 class="card-title mb-0 flex-grow-1 text-white">Kejadian/bencana alam (mengganggu kehidupan dan menyebabkan kerugian bagi masyarakat) yang terjadi pada tahun 2023 dan 2024</h4>
+                                                        </div><!-- end card header -->
+                                                        <div class="card-body">
+                                                            <div>
+                                                                <div class="table-responsive mt-4 mt-xl-0">
+                                                                    <table class="table table-hover table-striped align-middle mb-0">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>Tanah Longsor</td>
+                                                                                <td>Tidak Ada</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Banjir Bandang</td>
+                                                                                <td>Tidak Ada</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Gempa Bumi</td>
+                                                                                <td>Tidak Ada</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="card mb-4">
+                                                        <div class="card-header bg-primary align-items-center d-flex">
+                                                            <h4 class="card-title mb-0 flex-grow-1 text-white">Fasilitas/upaya antisipasi/mitigasi bencana alam yang ada di desa/kelurahan</h4>
+                                                        </div><!-- end card header -->
+                                                        <div class="card-body">
+                                                            <div>
+                                                                <div class="table-responsive mt-4 mt-xl-0">
+                                                                    <table class="table table-hover table-striped align-middle mb-0">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>Sistem peringatan dini bencana alam	</td>
+                                                                                <td>Ada</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Sistem peringatan dini khusus tsunami</td>
+                                                                                <td>Ada</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Perlengkapan keselamatan (perahu karet, tenda, masker, dll.)</td>
+                                                                                <td>Ada</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Rambu–rambu dan jalur evakuasi bencana</td>
+                                                                                <td>Ada</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- TAB ASET -->
+                                        <div class="tab-pane" id="asdes" role="tabpanel">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="card mb-4">
+                                                        <div class="card-header bg-primary align-items-center d-flex">
+                                                            <h4 class="card-title mb-0 flex-grow-1 text-white">Kepemilikan aset desa</h4>
+                                                        </div><!-- end card header -->
+                                                        <div class="card-body">
+                                                            <div>
+                                                                <div class="table-responsive mt-4 mt-xl-0">
+                                                                    <table class="table table-hover table-striped align-middle mb-0">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>Tanah Kas Desa/Ulayat</td>
+                                                                                <td>Ada</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Bangunan Milik Desa (Balai Desa, Balai Rakyat, dll.)</td>
+                                                                                <td>Ada</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Aset Desa Lainnya</td>
+                                                                                <td>Ada</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Jumlah Unit Usaha BUMDes</td>
+                                                                                <td>1</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Jumlah Pasar Desa (pasar hewan, pelelangan ikan, pelelangan hasil pertanian, dll.)</td>
+                                                                                <td>0</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Jumlah Tambatan Perahu</td>
+                                                                                <td>0</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <!--end tab-content-->
                                 </div>

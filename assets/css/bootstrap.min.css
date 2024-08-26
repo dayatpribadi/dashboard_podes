@@ -4474,10 +4474,14 @@ fieldset:disabled .btn {
     --vz-nav-link-disabled-color: #878a99;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
+    /* display: flex; */
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     padding-left: 0;
+    margin-right: 20px;
+    margin-left: 10px;
+    padding: 20px;
+    overflow: scroll;
     margin-bottom: 0;
     list-style: none
 }

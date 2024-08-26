@@ -6101,6 +6101,14 @@ a {
   --bs-position: start;
 }
 
+.nav .nav-tabs .nav-extends{
+  overflow: scroll;
+  padding: 20px;
+  margin-right: 25px;
+  display: flex !important;
+  flex-wrap: nowrap !important;
+}
+
 .dropdown-head .nav-tabs-custom {
   border: 0;
 }

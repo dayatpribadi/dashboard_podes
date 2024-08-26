@@ -4,10 +4,10 @@ Highcharts.chart('pie_chart_podes01', {
         type: 'pie'
     },
     title: {
-        text: 'Data Wilayah Desa Tanjung Raja Selatan'
+        text: 'Jumlah Tempat Ibadah di Desa/Kelurahan'
     },
     tooltip: {
-        valueSuffix: '%'
+        valueSuffix: ''
     },
     subtitle: {
         text:
@@ -39,33 +39,45 @@ Highcharts.chart('pie_chart_podes01', {
     },
     series: [
         {
-            name: 'Jenis Wilayah',
+            name: 'Tempat Ibadah',
             colorByPoint: true,
             data: [
                 {
-                    name: 'Tanah Kering: 225 Ha',
-                    y: 55.6,
+                    name: 'Masjid',
+                    y: 1,
                 },
                 {
-                    name: 'Tanah Sawah : 114 Ha',
+                    name: 'Langgar/Mushola',
                     sliced: true,
                     selected: true,
-                    y: 28.1
+                    y: 4
                 },
                 {
-                    name: 'Tanah Basah : 0 Ha',
+                    name: 'Gereja Protestan',
                     y: 0
                 },
                 {
-                    name: 'Tanah Perkebunan: 39 Ha',
-                    y: 9.6
+                    name: 'Gereja Katolik',
+                    y: 0
                 },
                 {
-                    name: 'Tanah Fasum : 27 Ha',
-                    y: 6.7
+                    name: 'Kapel',
+                    y: 0
                 },
                 {
-                    name: 'Tanah Hutan : 0 Ha',
+                    name: 'Pura',
+                    y: 0
+                },
+                {
+                    name: 'Wihara',
+                    y: 0
+                },
+                {
+                    name: 'Kelenteng',
+                    y: 0
+                },
+                {
+                    name: 'Lainnya',
                     y: 0
                 }
             ]
@@ -73,7 +85,104 @@ Highcharts.chart('pie_chart_podes01', {
     ]
 });
 
-
+// HIghtchart
+Highcharts.chart('pie_chart_podes02', {
+    chart: {
+        type: 'bar'
+    },
+    title: {
+        text: 'Sarana & Prasarana Pendidikan'
+    },
+    tooltip: {
+        valueSuffix: ''
+    },
+    subtitle: {
+        text:
+        'Data Tahun 2024'
+    },
+    plotOptions: {
+        series: {
+            allowPointSelect: true,
+            cursor: 'pointer',
+            dataLabels: [{
+                enabled: true,
+                distance: 20
+            }, {
+                enabled: false,
+                distance: -40,
+                format: '{point.percentage:.1f}%',
+                style: {
+                    fontSize: '0.8em',
+                    textOutline: 'none',
+                    opacity: 0.7
+                },
+                filter: {
+                    operator: '>',
+                    property: 'percentage',
+                    value: 10
+                }
+            }]
+        }
+    },
+    series: [
+        {
+            name: 'Sarana Pendidikan',
+            colorByPoint: true,
+            data: [
+                {
+                    name: 'Paud',
+                    y: 4,
+                },
+                {
+                    name: 'TK',
+                    y: 1,
+                },
+                {
+                    name: 'RA/BA',
+                    sliced: true,
+                    selected: true,
+                    y: 0,
+                },
+                {
+                    name: 'SD',
+                    sliced: true,
+                    selected: true,
+                    y: 2,
+                },
+                {
+                    name: 'MI',
+                    sliced: true,
+                    selected: true,
+                    y: 0,
+                },
+                {
+                    name: 'SMP',
+                    y: 0,
+                },
+                {
+                    name: 'MTS',
+                    y: 0
+                },
+                {
+                    name: 'SMA',
+                    y: 0
+                },
+                {
+                    name: 'MA',
+                    y: 0
+                },
+                {
+                    name: 'SMK',
+                    y: 0
+                },
+                {
+                    name: 'Perguruan Tinggi',
+                    y: 0
+                },
+            ]
+        }
+    ]
+});
 
 // Create the chart
 Highcharts.chart('bar_chart_podes01', {
@@ -300,4 +409,110 @@ Highcharts.chart('bar_chart_podes01', {
             },
         ]
     }
+});
+
+// Create the chart
+Highcharts.chart('bar_chart_podes02', {
+    chart: {
+        type: 'column'
+    },
+    title: {
+        align: 'left',
+        text: 'Sarana & Prasarana Kesehatan'
+    },
+    subtitle: {
+        align: 'left',
+        text: 'Sumber Data Source: <a href="http://bps.go.id" target="_blank">Badan Pusat Statistik</a>'
+    },
+    accessibility: {
+        announceNewData: {
+            enabled: true
+        }
+    },
+    xAxis: {
+        type: 'category'
+    },
+    yAxis: {
+        title: {
+            text: 'Jumlah Sarana  (Unit)'
+        }
+
+    },
+    legend: {
+        enabled: false
+    },
+    plotOptions: {
+        series: {
+            borderWidth: 0,
+            dataLabels: {
+                enabled: true,
+                format: '{y}'
+            }
+        }
+    },
+
+    tooltip: {
+        headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+        pointFormat: '<span style="color:{point.color}">{point.name}</span>: ' +
+            '<b>{point.y:f}</b> <br/>'
+    },
+
+    series: [
+        {
+            name: 'Sarana Kesehatan',
+            colorByPoint: true,
+            data: [
+                {
+                    name: 'Rumah Sakit',
+                    y: 0,
+                    drilldown: 'rumkit'
+                },
+                {
+                    name: 'Rumah Sakit Bersalin',
+                    y: 0,
+                    drilldown: 'bersalin'
+                },
+                {
+                    name: 'Puskesmas dengan Rawat Inap',
+                    y: 0,
+                    drilldown: 'irna'
+                },
+                {
+                    name: 'Puskesmas tanpa Rawat Inap',
+                    y: 0,
+                    drilldown: 'tirna'
+                },
+                {
+                    name: 'Puskesmas Pembantu',
+                    y: 0,
+                    drilldown: 'pustu'
+                },
+                {
+                    name: 'Poliklinik',
+                    y: 0,
+                    drilldown: 'poli'
+                },
+                {
+                    name: 'Tempat Praktik Dokter',
+                    y: 0,
+                    drilldown: 'pradok'
+                },
+                {
+                    name: 'Rumah Bersalin',
+                    y: 3,
+                    drilldown: 'rubes'
+                },
+                {
+                    name: 'Tempat Praktik Bidan',
+                    y: 3,
+                    drilldown: 'bidan'
+                },
+                {
+                    name: 'Poskesdes',
+                    y: 1,
+                    drilldown: 'pokes'
+                },
+            ]
+        }
+    ],
 });
