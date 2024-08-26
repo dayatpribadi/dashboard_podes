@@ -1,0 +1,749 @@
+<!doctype html>
+<html lang="en" data-layout="horizontal" data-layout-style="" data-layout-position="fixed" data-topbar="light">
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>Dashboard Potensi Desa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+    <meta content="Themesbrand" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <!-- Dragula css -->
+    <link rel="stylesheet" href="assets/libs/dragula/dragula.min.css" />
+
+    <!-- Layout config Js -->
+    <script src="assets/js/layout.js"></script>
+    <!-- Bootstrap Css -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+    <!-- custom Css-->
+    <link href="assets/css/custom.min.css" rel="stylesheet" type="text/css" />
+    <!-- HightCart -->
+    <link href="assets/hightchart/css/highcharts.css" rel="stylesheet" >
+</head>
+
+<body>
+
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+
+        <header id="page-topbar">
+    <div class="layout-width">
+        <div class="navbar-header">
+            <div class="d-flex">
+                <!-- LOGO -->
+                <div class="navbar-brand-box horizontal-logo">
+                    <a href="index.html" class="logo logo-dark">
+                        <span class="logo-sm">
+                            <img src="assets/images/logo-sm.png" alt="" height="22">
+                        </span>
+                        <span class="logo-lg">
+                            <img src="assets/images/logo-dark.png" alt="" height="17">
+                        </span>
+                    </a>
+
+                    <a href="index.html" class="logo logo-light">
+                        <span class="logo-sm">
+                            <img src="assets/images/logo-sm.png" alt="" height="22">
+                        </span>
+                        <span class="logo-lg">
+                            <img src="assets/images/logo-light.png" alt="" height="17">
+                        </span>
+                    </a>
+                </div>
+
+                <button type="button" class="btn btn-sm px-3 fs-16 header-item vertical-menu-btn topnav-hamburger" id="topnav-hamburger-icon">
+                    <span class="hamburger-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </button>
+            </div>
+
+            <div class="d-flex align-items-center">
+
+                <div class="ms-1 header-item d-none d-sm-flex">
+                    <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle light-dark-mode">
+                        <i class='bx bx-moon fs-22'></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+        <!-- ========== App Menu ========== -->
+        <div class="app-menu navbar-menu">
+            <!-- LOGO -->
+            <div class="navbar-brand-box">
+                <!-- Dark Logo-->
+                <a href="index.html" class="logo logo-dark">
+                    <span class="logo-sm">
+                        <img src="assets/images/logo-sm.png" alt="" height="22">
+                    </span>
+                    <span class="logo-lg">
+                        <img src="assets/images/logo-dark.png" alt="" height="17">
+                    </span>
+                </a>
+                <!-- Light Logo-->
+                <a href="index.html" class="logo logo-light">
+                    <span class="logo-sm">
+                        <img src="assets/images/logo-sm.png" alt="" height="22">
+                    </span>
+                    <span class="logo-lg">
+                        <img src="assets/images/logo-light.png" alt="" height="17">
+                    </span>
+                </a>
+                <button type="button" class="btn btn-sm p-0 fs-20 header-item float-end btn-vertical-sm-hover" id="vertical-hover">
+                    <i class="ri-record-circle-line"></i>
+                </button>
+            </div>
+
+            <div id="scrollbar">
+                <div class="container-fluid d-none">
+
+                    <div id="two-column-menu"></div>
+                    <ul class="navbar-nav" id="navbar-nav">
+                        <li class="menu-title"><span data-key="t-menu">Menu</span></li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="#">
+                                <span data-key="t-dashboards"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Sidebar -->
+            </div>
+
+            <div class="sidebar-background"></div>
+        </div>
+        <!-- Left Sidebar End -->
+        <!-- Vertical Overlay-->
+        <div class="vertical-overlay"></div>
+
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="main-content">
+
+            <div class="page-content">
+                <div class="container-fluid">
+
+                    <!-- start page title -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                                <h4 class="mb-sm-0"> Dashboard Potensi Desa</h4>
+
+                                <div class="page-title-right">
+                                    <ol class="breadcrumb m-0">
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Back</a></li>
+                                        <li class="breadcrumb-item active">Potensi Desa</li>
+                                    </ol>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end page title -->
+
+                    <!-- CARD DASHBOARD -->
+
+                    <div class="row">
+                        <div class="col-xxl-12">
+                            <div class="d-flex flex-column h-100">
+                                <div class="row h-100">
+                                    <div class="col-12">
+                                        <div class="card">
+                                            <div class="card-body p-0">
+                                                <div class="alert alert-primary border-0 rounded-0 m-0 d-flex align-items-center" role="alert">
+                                                    <i data-feather="alert-triangle" class="text-primary me-2 icon-sm"></i>
+                                                    <div class="flex-grow-1 text-truncate">
+                                                        Informasi Desa <b>Tanjung Raja Selatan </b>
+                                                    </div>
+                                                    <div class="flex-shrink-0">
+                                                        <a href="pages-pricing.html" class="text-reset text-decoration-underline"><b>Upgrade</b></a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row align-items-end">
+                                                    <div class="col-sm-12">
+                                                        <div class="p-3">
+                                                            <p class="fs-16 lh-base">Menyajikan Informasi data desa yang bersumber dari prodeskel dan epdeskel. Pengumpulan dan Pengelolaan data dan informasi berada di Direktorat Jenderal Bina Pemerintahan Desa. Fitur integrasi dan validasi data oleh Pemerintah, Pemerintah Provinsi, Pemerintah Kabupaten/Kota dan Desa sesuai ketentuan yang berlaku.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> <!-- end card-body-->
+                                        </div>
+                                    </div> <!-- end col-->
+                                </div>
+                                <!-- end row-->
+                            </div>
+                        </div> 
+
+                        <div class="row align-items-center mb-4">
+                            <div class="col-lg-auto">
+                                <span><i class="ri-calendar-event-fill align-bottom me-1"></i> Pilih Tahun</span>
+                            </div>
+                            <div class="col-lg-2">
+                                <select class="form-control" data-choices data-choices-search-false name="choices-select-status" id="choices-select-status">
+                                    <option value="">2024</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2020">2020</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- end col-->
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <div>
+                                    <ul class="nav nav-tabs nav-tabs-custom" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" data-bs-toggle="tab" href="#penduduk" role="tab" aria-selected="false">
+                                                <i class="ri-user-settings-line text-muted align-bottom me-1"></i> Potensi Penduduk
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-bs-toggle="tab" id="images-tab" href="#wilayah" role="tab" aria-selected="true">
+                                                <i class="ri-image-fill text-muted align-bottom me-1"></i> Potensi Wilayah
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-bs-toggle="tab" href="#sarpra" role="tab" aria-selected="false">
+                                                <i class="ri-list-unordered text-muted align-bottom me-1"></i> Sarana & Prasarana
+                                            </a>
+                                        </li>
+                                        <!-- <li class="nav-item ms-auto">
+                                            <div class="dropdown">
+                                                <a class="nav-link fw-medium text-reset mb-n1" href="#" role="button" id="dropdownMenuLink1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="ri-settings-4-line align-middle me-1"></i> Pilih Tahun
+                                                </a>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                                                    <li><a class="dropdown-item" href="#">2024</a></li>
+                                                    <li><a class="dropdown-item" href="#">2023</a></li>
+                                                    <li><a class="dropdown-item" href="#">2022</a></li>
+                                                    <li><a class="dropdown-item" href="#">2021</a></li>
+                                                </ul>
+                                            </div>
+                                        </li> -->
+                                    </ul>
+                                </div>
+                                <div class="card-body p-4">
+                                    <div class="tab-content text-muted">
+                                        <!-- TAB PENDUDUK -->
+                                        <div class="tab-pane active" id="penduduk" role="tabpanel">
+                                            <div class="pb-3">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="card card-animate">
+                                                            <div class="card-body bg-soft-danger">
+                                                                <div class="d-flex justify-content-between">
+                                                                    <div>
+                                                                        <p class="fw-medium text-muted mb-0">Jumlah Kepala Keluarga</p>
+                                                                        <h2 class="mt-4 ff-secondary fw-semibold"><span class="counter-value" data-target="3923"></span>
+                                                                        </h2>
+                                                                    </div>
+                                                                    <div>
+                                                                        <div class="avatar-sm flex-shrink-0">
+                                                                            <span class="avatar-title bg-soft-info rounded-circle fs-2">
+                                                                                <i data-feather="users" class="text-info"></i>
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div><!-- end card body -->
+                                                        </div> <!-- end card-->
+                                                    </div> <!-- end col-->
+                                                    <div class="col-md-6">
+                                                        <div class="card card-animate">
+                                                            <div class="card-body badge-soft-warning">
+                                                                <div class="d-flex justify-content-between">
+                                                                    <div>
+                                                                        <p class="fw-medium text-muted mb-0">Kepadatan Penduduk</p>
+                                                                        <h2 class="mt-4 ff-secondary fw-semibold"><span class="counter-value" data-target="1903"></span>
+                                                                        </h2>
+                                                                    </div>
+                                                                    <div>
+                                                                        <div class="avatar-sm flex-shrink-0">
+                                                                            <span class="avatar-title bg-soft-info rounded-circle fs-2">
+                                                                                <i data-feather="users" class="text-info"></i>
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div><!-- end card body -->
+                                                        </div> <!-- end card-->
+                                                    </div> <!-- end col-->
+                                                </div> 
+                                                <div class="row">
+                                                    <div class="col-xl-12">
+                                                        <div class="card">
+                                                            <div class="card-header border-0 align-items-center d-flex">
+                                                                <h4 class="card-title mb-0 flex-grow-1">Kondisi Penduduk</h4>
+                                                            </div><!-- end card header -->
+                                                            <div class="card-header p-0 border-0">
+                                                                <div class="row g-0 text-center">
+                                                                    <div class="col-6 col-sm-4 bg-soft-info">
+                                                                        <div class="p-3 border border-dashed border-start-0">
+                                                                        <h5 class="mb-1"><span class="counter-value" data-target="1903"></span>
+                                                                            </h5>
+                                                                            <p class="text-muted mb-0">Jumlah Penduduk Laki-laki</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <!--end col-->
+                                                                    <div class="col-6 col-sm-4 bg-soft-primary">
+                                                                        <div class="p-3 border border-dashed border-start-0">
+                                                                            <h5 class="mb-1"><span class="counter-value" data-target="1899"></span>
+                                                                            </h5>
+                                                                            <p class="text-muted mb-0">Jumlah Penduduk Perempuan</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <!--end col-->
+                                                                    <div class="col-12 col-sm-4 bg-soft-success">
+                                                                        <div class="p-3 border border-dashed border-start-0 border-end-0">
+                                                                            <h5 class="mb-1"><span class="counter-value" data-target="3802"></span>
+                                                                            <p class="text-muted mb-0">Total Jumlah Penduduk</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <!--end col-->
+                                                                </div>
+                                                            </div><!-- end card header -->
+    
+                                    
+                                                            <div class="card-body">
+                                                                <figure class="highcharts-figure">
+                                                                    <div id="bar_chart_podes01" class="highcharts-light "></div>
+                                                                </figure>
+                                                            
+                                                            </div><!-- end card-body -->
+
+                                                        </div><!-- end card -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- TAB WILAYAH -->
+                                        <div class="tab-pane" id="wilayah" role="tabpanel">
+                                            <div class="row pb-3">
+                                                <div class="col-md-6">
+                                                    <figure class="highcharts-figure">
+                                                        <div id="pie_chart_podes01" class="highcharts-light" height="100%"></div>
+                                                    </figure>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="card card-height-100">
+                                                        <div class="card-header bg-primary align-items-center d-flex">
+                                                            <h4 class="card-title mb-0 flex-grow-1 text-white">Batas Wilayah Desa</h4>
+                                                        </div><!-- end card header -->
+                        
+                                                        <div class="card-body p-0">
+                                                            <div data-simplebar style="max-height: 319px;">
+                                                                <ul class="list-group list-group-flush border-dashed px-3">
+                                                                    <li class="list-group-item ps-0">
+                                                                        <div class="d-flex align-items-start">
+                                                                          
+                                                                            <div class="flex-grow-1">
+                                                                                <label class="form-check-label mb-0 ps-2" for="task_one">Deskel Sebelah Utara</label>
+                                                                            </div>
+                                                                            <div class="flex-shrink-0 ms-2">
+                                                                                <p class="text-muted fs-13 mb-0">Tanjung Raja Utara</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li class="list-group-item ps-0">
+                                                                        <div class="d-flex align-items-start">
+                                                                      
+                                                                            <div class="flex-grow-1">
+                                                                                <label class="form-check-label mb-0 ps-2" for="task_two">Deskel Sebelah Selatan</label>
+                                                                            </div>
+                                                                            <div class="flex-shrink-0 ms-2">
+                                                                                <p class="text-muted fs-13 mb-0">Tanjung Agas</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li class="list-group-item ps-0">
+                                                                        <div class="d-flex align-items-start">
+                                                                            
+                                                                            <div class="flex-grow-1">
+                                                                                <label class="form-check-label mb-0 ps-2" for="task_three">Deskel Sebelah Timur</label>
+                                                                            </div>
+                                                                            <div class="flex-shrink-0 ms-2">
+                                                                                <p class="text-muted fs-13 mb-0">Tanjung Raja Timur</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li class="list-group-item ps-0">
+                                                                        <div class="d-flex align-items-start">
+                                                                        
+                                                                            <div class="flex-grow-1">
+                                                                                <label class="form-check-label mb-0 ps-2" for="task_four">Deskel Sebelah Barat</label>
+                                                                            </div>
+                                                                            <div class="flex-shrink-0 ms-2">
+                                                                                <p class="text-muted fs-13 mb-0">Tanjung Raja Barat</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li class="list-group-item ps-0">
+                                                                        <div class="d-flex align-items-start">
+                                                
+                                                                            <div class="flex-grow-1">
+                                                                                <label class="form-check-label mb-0 ps-2" for="task_five">Kecamatan Sebelah Utara</label>
+                                                                            </div>
+                                                                            <div class="flex-shrink-0 ms-2">
+                                                                                <p class="text-muted fs-13 mb-0">Tanjung Raja Utara</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li class="list-group-item ps-0">
+                                                                        <div class="d-flex align-items-start">
+                                                              
+                                                                            <div class="flex-grow-1">
+                                                                                <label class="form-check-label mb-0 ps-2" for="task_six">Kecamatan Sebelah Selatan</label>
+                                                                            </div>
+                                                                            <div class="flex-shrink-0 ms-2">
+                                                                                <p class="text-muted fs-13 mb-0">Tanjung Raja Selatan</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                </ul><!-- end ul -->
+                                                            </div>
+                                                        </div><!-- end card body -->
+                                                    </div><!-- end card -->
+                                                </div>
+                                            </div>
+                                            <div class="row pb-3">
+                                                <div class="col-md-6">
+                                                    <div class="card card-height-100">
+                                                        <div class="card-header bg-primary align-items-center d-flex">
+                                                            <h4 class="card-title mb-0 flex-grow-1 text-white">Jenis Lahan</h4>
+                                                        </div><!-- end card header -->
+                        
+                                                        <div class="card-body px-3">
+                                                            <div data-simplebar style="max-height: 319px;">
+                                                                <div class="table-responsive mt-4 mt-xl-0">
+                                                                    <table class="table table-hover table-striped align-middle mb-0">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th scope="col">Jenis Lahan</th>
+                                                                                <th scope="col" class="text-end">Luas</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td class="text-uppercase">Sawah Irigasi Teknis</td>
+                                                                                <td class="text-end">98 Ha.</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div><!-- end card body -->
+                                                    </div><!-- end card -->
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <div class="card card-height-100">
+                                                                <div class="card-header bg-primary align-items-center d-flex">
+                                                                    <h4 class="card-title mb-0 flex-grow-1 text-white">Orbitasi Desa</h4>
+                                                                </div><!-- end card header -->
+                                
+                                                                <div class="card-body px-3">
+                                                                    <div data-simplebar style="max-height: 319px;">
+                                                                        <div class="table-responsive mt-4 mt-xl-0">
+                                                                            <table class="table table-hover table-striped align-middle mb-0">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td class="text-uppercase">Jarak Ke Ibu kota Kecamatan</td>
+                                                                                        <td class="text-end">3 Km</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td class="text-uppercase">Lama Jarak Tempuh Ke Ibu kota Kecamatan dengan Kendaraan Bermotor</td>
+                                                                                        <td class="text-end">0.12 Jam</td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                </div><!-- end card body -->
+                                                            </div><!-- end card -->
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <div class="card card-height-100">
+                                                                <div class="card-header bg-primary align-items-center d-flex">
+                                                                    <h4 class="card-title mb-0 flex-grow-1 text-white">Potensi Wisata</h4>
+                                                                </div><!-- end card header -->
+                                
+                                                                <div class="card-body px-3">
+                                                                    <div data-simplebar style="max-height: 319px;">
+                                                                        <div class="table-responsive mt-4 mt-xl-0">
+                                                                            <table class="table table-hover table-striped align-middle mb-0">
+                                                                                <thead>
+                                                                                    <tr>
+                                                                                        <th scope="col">Lokasi/Tempat</th>
+                                                                                        <th scope="col" class="text-end">Luas</th>
+                                                                                    </tr>
+                                                                                </thead>
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td class="text-uppercase">Laut</td>
+                                                                                        <td class="text-end">98 Ha.</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td class="text-uppercase">Danau</td>
+                                                                                        <td class="text-end">98 Ha.</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td class="text-uppercase">Gunung</td>
+                                                                                        <td class="text-end">98 Ha.</td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                </div><!-- end card body -->
+                                                            </div><!-- end card -->
+                                                        </div>
+                                                    </div>
+                                          
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--end tab-pane-->
+
+                                        <!-- TAB SARANA PRASARANA -->
+                                        <div class="tab-pane" id="sarpra" role="tabpanel">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="card card-height-100">
+                                                        <div class="card-header bg-primary align-items-center d-flex">
+                                                            <h4 class="card-title mb-0 flex-grow-1 text-white">Kantor Desa</h4>
+                                                        </div><!-- end card header -->
+                        
+                                                        <div class="card-body px-3">
+                                                            <div data-simplebar style="max-height: 319px;">
+                                                                <div class="table-responsive mt-4 mt-xl-0">
+                                                                    <table class="table table-hover table-striped align-middle mb-0">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td class="text-uppercase">Gedung Kantor</td>
+                                                                                <td class="text-end">Ada</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="text-uppercase">Kondisi Kantor</td>
+                                                                                <td class="text-end">Baik</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="text-uppercase">Jumlah Ruang Kerja</td>
+                                                                                <td class="text-end">3</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="text-uppercase">Balai Desa</td>
+                                                                                <td class="text-end">Ada</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div><!-- end card body -->
+                                                    </div><!-- end card -->
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="card card-height-100">
+                                                        <div class="card-header bg-primary align-items-center d-flex">
+                                                            <h4 class="card-title mb-0 flex-grow-1 text-white">Sarana dan Prasarana Peribadatan</h4>
+                                                        </div><!-- end card header -->
+                        
+                                                        <div class="card-body px-3">
+                                                            <div data-simplebar style="max-height: 319px;">
+                                                                <div class="table-responsive mt-4 mt-xl-0">
+                                                                    <table class="table table-hover table-striped align-middle mb-0">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td class="text-uppercase">Jumlah Masjid </td>
+                                                                                <td class="text-end">3</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="text-uppercase">Jumlah Mushola </td>
+                                                                                <td class="text-end">46</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="text-uppercase">Jumlah Gereja Protestan</td>
+                                                                                <td class="text-end">1</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="text-uppercase">Gereja Katolik</td>
+                                                                                <td class="text-end">Tidak Ada</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div><!-- end card body -->
+                                                    </div><!-- end card -->
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="card card-height-100">
+                                                        <div class="card-header bg-primary align-items-center d-flex">
+                                                            <h4 class="card-title mb-0 flex-grow-1 text-white">Lembaga Pemerintahan</h4>
+                                                        </div><!-- end card header -->
+                        
+                                                        <div class="card-body px-3">
+                                                            <div data-simplebar style="max-height: 319px;">
+                                                                <div class="table-responsive mt-4 mt-xl-0">
+                                                                    <table class="table table-hover table-striped align-middle mb-0">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td class="text-uppercase">Kepala Desa </td>
+                                                                                <td class="text-end">Sutheda, S.Sos.,M.Si.</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="text-uppercase">Pendidikan Kades </td>
+                                                                                <td class="text-end">S2</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="text-uppercase">Pendidikan Sekdes</td>
+                                                                                <td class="text-end">S1</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="text-uppercase">Pendidikan Ketua BPD</td>
+                                                                                <td class="text-end">SMA</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div><!-- end card body -->
+                                                    </div><!-- end card -->
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="card card-height-100">
+                                                        <div class="card-header bg-primary align-items-center d-flex">
+                                                            <h4 class="card-title mb-0 flex-grow-1 text-white">Sarana dan Prasarana Pendidikan</h4>
+                                                        </div><!-- end card header -->
+                        
+                                                        <div class="card-body px-3">
+                                                            <div data-simplebar style="max-height: 319px;">
+                                                                <div class="table-responsive mt-4 mt-xl-0">
+                                                                    <table class="table table-hover table-striped align-middle mb-0">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td class="text-uppercase">Gedung SD </td>
+                                                                                <td class="text-end">3</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div><!-- end card body -->
+                                                    </div><!-- end card -->
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="card card-height-100">
+                                                        <div class="card-header bg-primary align-items-center d-flex">
+                                                            <h4 class="card-title mb-0 flex-grow-1 text-white">Sarana dan Prasarana Kesehatan</h4>
+                                                        </div><!-- end card header -->
+                        
+                                                        <div class="card-body px-3">
+                                                            <div data-simplebar style="max-height: 319px;">
+                                                                <div class="table-responsive mt-4 mt-xl-0">
+                                                                    <table class="table table-hover table-striped align-middle mb-0">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td class="text-uppercase">Puskesmas </td>
+                                                                                <td class="text-end">1</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div><!-- end card body -->
+                                                    </div><!-- end card -->
+                                                </div>
+                                            </div>
+                                            <!--end row-->
+                                        </div>
+                                        <!--end tab-pane-->
+                                    </div>
+                                    <!--end tab-content-->
+                                </div>
+                                <!--end card-body-->
+                            </div>
+                            <!--end card -->
+                        </div>
+                        <!--end card -->
+                    </div>
+
+                </div>
+                <!-- container-fluid -->
+            </div>
+            <!-- End Page-content -->
+
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <script>document.write(new Date().getFullYear())</script> © Velzon.
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="text-sm-end d-none d-sm-block">
+                                Design & Develop by Themesbrand
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- end main content-->
+
+    </div>
+    <!-- END layout-wrapper -->
+
+
+
+    <!--start back-to-top-->
+    <button onclick="topFunction()" class="btn btn-danger btn-icon" id="back-to-top">
+        <i class="ri-arrow-up-line"></i>
+    </button>
+    <!--end back-to-top-->
+
+    <!--preloader-->
+    <div id="preloader">
+        <div id="status">
+            <div class="spinner-border text-primary avatar-sm" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="assets/libs/node-waves/waves.min.js"></script>
+    <script src="assets/libs/feather-icons/feather.min.js"></script>
+    <script src="assets/js/pages/plugins/lord-icon-2.1.0.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/libs/dragula/dragula.min.js"></script>
+    <script src="assets/libs/dom-autoscroller/dom-autoscroller.min.js"></script>
+     <!-- HightCart -->
+     <script src="assets/hightchart/highcharts.js"></script>
+     <script src="assets/hightchart/modules/accessibility.js"></script>
+     <script src="assets/hightchart/modules/exporting.js"></script>
+     <script src="assets/js/custom/data_hight_chart_podes.js"></script>
+
+    <!-- App js -->
+    <script src="assets/js/pages/todo.init.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
